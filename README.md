@@ -32,6 +32,16 @@
 ### Asociation
 - has_many :message
 - has_many :group_users
+- has_many :group, through: :group_users
+
+### group テーブル
+|Column|Type|Options|
+|------|----|-------|
+|groupname|string|null: false|
+|group_id|integer|null: false, foreign_key: true|
+
+### Asociation
+- has_many :users, through: :group_users
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
