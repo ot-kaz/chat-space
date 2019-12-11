@@ -43,6 +43,8 @@
 ### Asociation
 - has_many :users, through: :group_users
 - has_many :group_users
+- has_many :message
+
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
