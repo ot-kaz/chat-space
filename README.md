@@ -37,8 +37,8 @@
 ### group テーブル
 |Column|Type|Options|
 |------|----|-------|
-|name|string|null: false|
-|group_id|integer|null: false, foreign_key: true|
+|groupname|string|null: false|
+
 
 ### Asociation
 - has_many :users, through: :group_users
