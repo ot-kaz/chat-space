@@ -37,7 +37,7 @@
 ### group テーブル
 |Column|Type|Options|
 |------|----|-------|
-|groupname|string|null: false|
+|name|string|null: false|
 
 
 ### Asociation
