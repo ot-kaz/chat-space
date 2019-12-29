@@ -1,0 +1,27 @@
+.main
+  .right-header
+    .group-box
+      .group-name
+        %p group
+      .group-member
+        %p Member
+    .edit-btn 
+      = link_to "Edit", "#" 
+  
+  .main-content
+    .message-box1
+      .message_updata
+        %p.message_updata_user kkk
+        %p.message_updata_data 2019/12/25
+      %p.message_text おはよう
+
+  .chat-area
+    .message-area
+      %input{:type => "text",:placeholder => "type a message",:name => "text-form"}
+      .image-btn
+        %label{class: "input-box__image"}
+          = icon('fas', 'image')
+          %input{type: "file"}
+    %input.submit{type: 'submit', value: 'Send'}
+      
+
