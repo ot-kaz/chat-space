@@ -14,8 +14,6 @@
         %p.message_updata_user kkk
         %p.message_updata_data 2019/12/25
       %p.message_text おはよう
-<<<<<<< Updated upstream
-=======
       .message_updata
         %p.message_updata_user kkk
         %p.message_updata_data 2019/12/25
@@ -24,15 +22,13 @@
         %p.message_updata_user kkk
         %p.message_updata_data 2019/12/25
       %p.message_text おはよう
->>>>>>> Stashed changes
 
-  .chat-area
-    .message-area
-      %input{:type => "text",:placeholder => "type a message",:name => "text-form"}
-      .image-btn
-        %label{class: "input-box__image"}
-          = icon('fas', 'image')
-          %input{type: "file"}
-    %input.submit{type: 'submit', value: 'Send'}
-      
+  .form
+    .new-message
+      %input.form__message{:placeholder => "type a amessage"}
+      %label.form__mask__image
+        = icon('fa','image',class: 'icon')
+        %input.hidden{type: 'file',name: 'icon'}
+      %input.form__submit{type: 'submit', value: 'Send'}
 
+    
