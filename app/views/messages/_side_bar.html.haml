@@ -1,0 +1,20 @@
+.html
+  .left-header
+    .textbox
+      %p.user-name
+        = current_user.name
+      %ul.menu
+        %li.new-group
+          =link_to do
+            = icon('fas', 'pen-square',class: 'icon')
+        %li.edit
+          =link_to edit_user_path(current_user) do
+            = icon('fas', 'cog', class: 'icon')
+  .left-content
+    .group
+      %p.group_name 
+        test
+      %p.message
+        まだメッセージはありません
+      
+  

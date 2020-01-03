@@ -1,0 +1,34 @@
+.main
+  .right-header
+    .group-box
+      .group-name
+        %p group
+      .group-member
+        %p Member
+    .edit-btn 
+      Edit 
+  
+  .main-content
+    .message-box1
+      .message_updata
+        %p.message_updata_user kkk
+        %p.message_updata_data 2019/12/25
+      %p.message_text おはよう
+      .message_updata
+        %p.message_updata_user kkk
+        %p.message_updata_data 2019/12/25
+      %p.message_text おはよう
+      .message_updata
+        %p.message_updata_user kkk
+        %p.message_updata_data 2019/12/25
+      %p.message_text おはよう
+
+  .form
+    .new-message
+      %input.form__message{placeholder: 'type a message'}
+        %label.form__mask__image
+        = icon('fa','image',class: 'icon')
+        %input.hidden{type: 'file',name: 'icon'}
+      %input.form__submit{type: 'submit', value: 'Send'}
+
+    
