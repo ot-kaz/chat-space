@@ -2,13 +2,14 @@
   .left-header
     .textbox
       %p.user-name
-        man
+        = current_user.name
       %ul.menu
         %li.new-group
-          =link_to "#" do
-            .fas.fa-edit
+          =link_to do
+            = icon('fas', 'pen-square',class: 'icon')
         %li.edit
-          .fas.fa-cog
+          =link_to edit_user_path(current_user) do
+            = icon('fas', 'cog', class: 'icon')
   .left-content
     .group
       %p.group_name 

@@ -6,7 +6,7 @@
       .group-member
         %p Member
     .edit-btn 
-      = link_to "Edit", "#" 
+      Edit 
   
   .main-content
     .message-box1
@@ -26,7 +26,7 @@
   .form
     .new-message
       %input.form__message{:placeholder => "type a amessage"}
-      %label.form__mask__image
+        %label.form__mask__image
         = icon('fa','image',class: 'icon')
         %input.hidden{type: 'file',name: 'icon'}
       %input.form__submit{type: 'submit', value: 'Send'}
