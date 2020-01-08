@@ -16,9 +16,12 @@
   border-bottom: solid 1px #eee;
 }
 
+.group-box{
+  margin-top: 35px;
+}
+
 .group-name{
   color: #333333;
-  margin-top: 35px;
   font-size: 20px;
 }
 
@@ -43,42 +46,47 @@ right: 40px;
   height: calc(100vh - 190px);
 }
 
-.message-box1{
+.message-box{
   padding-top: 35px;
   padding-left: 40px;
 }
 
-.message_updata{
+.messages{
+  padding-bottom: 40px;
+
+}
+
+.message-box{
   display: flex;
   margin-bottom: 10px;
 }
+
 .message_updata_user{
   font-size: 16px;
   color: #333333;
   font-weight: bold;
-  
 }
 
-.message_updata_data{
-  font-size: 12px;
-  color: #999999;
-  margin-left: 10px;
-}
-
-.message_text{
+.lower-message{
+  color: #434a54;
   font-size: 14px;
-  color: #434A54;
-  margin-bottom: 46px;
+  margin-bottom: 10px;
 }
 
-  .from{
+.message_updata{
+  font-size: 12px;
+  margin-left: 10px;
+  color: #999999;
+}
+
+  .form{
     background-color: #d2d2d2;
     height: 90px;
     padding: 20px 40px;
-    position: relative;
 }
-  .new-message{
-  display: flex;
+  
+  .new_message{
+    display: flex;
   }
     .form__message{
       height: 50px;
@@ -94,12 +102,13 @@ right: 40px;
       margin-left: 15px;
       color: white;
       background-color: #38aef0;
+      float: right;
     }
 
     .form__mask__image{
-      position: absolute;
       right: 10px;
-      top: 10px;
+      top: 20px;
+      font-size: 20px;
     }
 
     .hidden {

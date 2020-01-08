@@ -1,34 +1,30 @@
 .main
   .right-header
     .group-box
+      
       .group-name
-        %p group
+        = @group.name
       .group-member
-        %p Member
+        - @group.users.each do |group_member|
+          = group_member.name
     .edit-btn 
-      Edit 
-  
+      = link_to edit_group_path(@group) do
+        Edit
+        
+    
+
   .main-content
-    .message-box1
-      .message_updata
-        %p.message_updata_user kkk
-        %p.message_updata_data 2019/12/25
-      %p.message_text おはよう
-      .message_updata
-        %p.message_updata_user kkk
-        %p.message_updata_data 2019/12/25
-      %p.message_text おはよう
-      .message_updata
-        %p.message_updata_user kkk
-        %p.message_updata_data 2019/12/25
-      %p.message_text おはよう
+    .messages
+      =render @messages
 
   .form
-    .new-message
-      %input.form__message{placeholder: 'type a message'}
-        %label.form__mask__image
-        = icon('fa','image',class: 'icon')
-        %input.hidden{type: 'file',name: 'icon'}
-      %input.form__submit{type: 'submit', value: 'Send'}
+    .new_message
+    = form_for [@group, @message] do |f|
+      = f.text_field :content, class: 'form__message',placeholder: 'type a message'
+      .form__mask
+        = f.label :image, class: 'form__mask__image' do
+          = icon('fas', 'image', class: 'icon')
+          = f.file_field :image, class: 'hidden'
+      = f.submit 'Send', class: 'form__submit'
 
     
