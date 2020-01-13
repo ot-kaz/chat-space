@@ -44,6 +44,7 @@ right: 40px;
 .main-content{ 
   background-color: #fafafa;
   height: calc(100vh - 190px);
+  overflow: scroll;
 }
 
 .message-box{
@@ -56,12 +57,12 @@ right: 40px;
 
 }
 
-.message-box{
+.upper-message{
   display: flex;
   margin-bottom: 10px;
 }
 
-.message_updata_user{
+.upper-message__user-name{
   font-size: 16px;
   color: #333333;
   font-weight: bold;
@@ -73,7 +74,7 @@ right: 40px;
   margin-bottom: 10px;
 }
 
-.message_updata{
+.upper-message__date{
   font-size: 12px;
   margin-left: 10px;
   color: #999999;
@@ -87,12 +88,14 @@ right: 40px;
   
   .new_message{
     display: flex;
+    width: 100%;
   }
+
     .form__message{
       height: 50px;
       border: #434A54;
       padding: 0 40px 0 10px;
-      width: 100%;
+      width: 600px;
     }
 
     .form__submit{
