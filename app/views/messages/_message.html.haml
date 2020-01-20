@@ -1,8 +1,8 @@
-.message{data: {message: {id: message.id}}}
+.message{data: {message: {id: "#{message.id}"}}}
   .message-box
     .message_updata_user
       = message.user.name
-    .message_updata
+    .upper-message__updata
       = message.created_at.strftime("%Y年%m月%d日 %H時%M分")
   .lower-message
     - if message.content.present?
