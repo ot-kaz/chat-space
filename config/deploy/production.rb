@@ -1,5 +1,5 @@
 server '3.115.213.102', user: 'ec2-user', roles: %w{app db web}
- server-based syntax
+  server-based syntax
 # ======================
 # Defines a single server with a list of roles and multiple properties.
 # You can define all roles on a single server, or split them:
